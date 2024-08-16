@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": false,
+        "amount": 30
+    },
+    "auditLog": "C:\\Users\\faith\\Downloads\\complete-node-backend-master\\complete-node-backend-master\\src\\logs\\error\\.63128f0d7e121775dde43a1fa463f1cfd092ad36-audit.json",
+    "files": [
+        {
+            "date": 1723814699404,
+            "name": "C:\\Users\\faith\\Downloads\\complete-node-backend-master\\complete-node-backend-master\\src\\logs\\error\\2024-08-16.log",
+            "hash": "5dcc8caa52a9363fbe928a519ebedc18b3da355aa6a3e979a1dafc819521d06b"
+        }
+    ],
+    "hashType": "sha256"
+}

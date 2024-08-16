@@ -1,0 +1,199 @@
+tags:
+  - name: users
+    description: Users API
+  - name: categories
+    description: Categories API
+
+paths:
+  # [GET] users
+  /users:
+    get:
+      tags:
+        - users
+      summary: Find All Users
+      responses:
+        200:
+          description: 'OK'
+        500:
+          description: 'Server Error'
+
+  # [POST] users
+    post:
+      tags:
+        - users
+      summary: Add User
+      parameters:
+        - name: body
+          in: body
+          description: User Data
+          required: true
+          schema:
+            $ref: '#/definitions/users'
+      responses:
+        201:
+          description: 'Created'
+        400:
+          description: 'Bad Request'
+        409:
+          description: 'Conflict'
+        500:
+          description: 'Server Error'
+
+  # [GET] users/id
+  /users/{id}:
+    get:
+      tags:
+        - users
+      summary: Find User By Id
+      parameters:
+        - name: id
+          in: path
+          description: User Id
+          required: true
+      responses:
+        200:
+          description: 'OK'
+        409:
+          description: 'Conflict'
+        500:
+          description: 'Server Error'
+
+  # [PUT] users/id
+    put:
+      tags:
+        - users
+      summary: Update User By Id
+      parameters:
+        - name: id
+          in: path
+          description: User Id
+          required: true
+        - name: body
+          in: body
+          description: User Data
+          required: true
+          schema:
+            $ref: '#/definitions/users'
+      responses:
+        200:
+          description: 'OK'
+        400:
+          description: 'Bad Request'
+        409:
+          description: 'Conflict'
+        500:
+          description: 'Server Error'
+
+  # [DELETE] users/id
+    delete:
+      tags:
+        - users
+      summary: Delete User By Id
+      parameters:
+        - name: id
+          in: path
+          description: User Id
+          required: true
+      responses:
+        200:
+          description: 'OK'
+        409:
+          description: 'Conflict'
+        500:
+          description: 'Server Error'
+
+  # [POST] category
+  /categories:
+    post:
+      tags:
+        - categories
+      summary: Add Category
+      parameters:
+        - name: body
+          in: body
+          description: Category Data
+          required: true
+          schema:
+            $ref: '#/definitions/categories'
+      responses:
+        201:
+          description: 'Created'
+        400:
+          description: 'Bad Request'
+        409:
+          description: 'Conflict'
+        500:
+          description: 'Server Error'
+
+  # [GET] categories
+    get:
+      tags:
+        - categories
+      summary: Get All Categories
+      responses:
+        200:
+          description: 'OK'
+        500:
+          description: 'Server Error'
+
+  # [DELETE] category/id
+    delete:
+      tags:
+        - categories
+      summary: Delete Category By Id
+      parameters:
+        - name: id
+          in: path
+          description: Category Id
+          required: true
+      responses:
+        200:
+          description: 'OK'
+        409:
+          description: 'Conflict'
+        500:
+          description: 'Server Error'
+  
+
+definitions:
+  users:
+    type: object
+    required:
+      - email
+      - password
+    properties:
+      email:
+        type: string
+        description: User Email
+      password:
+        type: string
+        description: User Password
+
+  categories:
+    type: object
+    required:
+      - title
+      - desc
+      - color
+      - img
+      - slug
+    properties:
+      title:
+        type: string
+        description: Category Title
+      desc:
+        type: string
+        description: Category Description
+      color:
+        type: string
+        description: Category Color
+      img:
+        type: string
+        description: Category Image URL
+      slug:
+        type: string
+        description: Category Slug
+
+schemes:
+  - https
+  - http

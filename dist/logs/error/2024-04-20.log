@@ -1,0 +1,106 @@
+2024-04-20 00:50:12 error: uncaughtException: Cannot find module './swagger.json'
+Require stack:
+- C:\Users\HP\Desktop\My-Projects\complete-node-backend\dist\app.js
+- C:\Users\HP\Desktop\My-Projects\complete-node-backend\dist\server.js
+Error: Cannot find module './swagger.json'
+Require stack:
+- C:\Users\HP\Desktop\My-Projects\complete-node-backend\dist\app.js
+- C:\Users\HP\Desktop\My-Projects\complete-node-backend\dist\server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1143:15)
+    at Module._load (node:internal/modules/cjs/loader:984:27)
+    at Module.require (node:internal/modules/cjs/loader:1231:19)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (C:\Users\HP\Desktop\My-Projects\complete-node-backend\dist\app.js:42:25)
+    at Module._compile (node:internal/modules/cjs/loader:1369:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)
+    at Module.load (node:internal/modules/cjs/loader:1206:32)
+    at Module._load (node:internal/modules/cjs/loader:1022:12)
+    at Module.require (node:internal/modules/cjs/loader:1231:19)
+2024-04-20 00:50:49 error: uncaughtException: Cannot find module './swagger.json'
+Require stack:
+- C:\Users\HP\Desktop\My-Projects\complete-node-backend\dist\app.js
+- C:\Users\HP\Desktop\My-Projects\complete-node-backend\dist\server.js
+Error: Cannot find module './swagger.json'
+Require stack:
+- C:\Users\HP\Desktop\My-Projects\complete-node-backend\dist\app.js
+- C:\Users\HP\Desktop\My-Projects\complete-node-backend\dist\server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1143:15)
+    at Module._load (node:internal/modules/cjs/loader:984:27)
+    at Module.require (node:internal/modules/cjs/loader:1231:19)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (C:\Users\HP\Desktop\My-Projects\complete-node-backend\dist\app.js:41:25)
+    at Module._compile (node:internal/modules/cjs/loader:1369:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)
+    at Module.load (node:internal/modules/cjs/loader:1206:32)
+    at Module._load (node:internal/modules/cjs/loader:1022:12)
+    at Module.require (node:internal/modules/cjs/loader:1231:19)
+2024-04-20 00:51:02 error: uncaughtException: Cannot find module './swagger.json'
+Require stack:
+- C:\Users\HP\Desktop\My-Projects\complete-node-backend\dist\app.js
+- C:\Users\HP\Desktop\My-Projects\complete-node-backend\dist\server.js
+Error: Cannot find module './swagger.json'
+Require stack:
+- C:\Users\HP\Desktop\My-Projects\complete-node-backend\dist\app.js
+- C:\Users\HP\Desktop\My-Projects\complete-node-backend\dist\server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1143:15)
+    at Module._load (node:internal/modules/cjs/loader:984:27)
+    at Module.require (node:internal/modules/cjs/loader:1231:19)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (C:\Users\HP\Desktop\My-Projects\complete-node-backend\dist\app.js:41:25)
+    at Module._compile (node:internal/modules/cjs/loader:1369:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)
+    at Module.load (node:internal/modules/cjs/loader:1206:32)
+    at Module._load (node:internal/modules/cjs/loader:1022:12)
+    at Module.require (node:internal/modules/cjs/loader:1231:19)
+2024-04-20 00:51:19 error: uncaughtException: Cannot find module './swagger.json'
+Require stack:
+- C:\Users\HP\Desktop\My-Projects\complete-node-backend\dist\app.js
+- C:\Users\HP\Desktop\My-Projects\complete-node-backend\dist\server.js
+Error: Cannot find module './swagger.json'
+Require stack:
+- C:\Users\HP\Desktop\My-Projects\complete-node-backend\dist\app.js
+- C:\Users\HP\Desktop\My-Projects\complete-node-backend\dist\server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1143:15)
+    at Module._load (node:internal/modules/cjs/loader:984:27)
+    at Module.require (node:internal/modules/cjs/loader:1231:19)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (C:\Users\HP\Desktop\My-Projects\complete-node-backend\dist\app.js:42:25)
+    at Module._compile (node:internal/modules/cjs/loader:1369:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)
+    at Module.load (node:internal/modules/cjs/loader:1206:32)
+    at Module._load (node:internal/modules/cjs/loader:1022:12)
+    at Module.require (node:internal/modules/cjs/loader:1231:19)
+2024-04-20 00:51:34 error: uncaughtException: Cannot find module './swagger.json'
+Require stack:
+- C:\Users\HP\Desktop\My-Projects\complete-node-backend\dist\app.js
+- C:\Users\HP\Desktop\My-Projects\complete-node-backend\dist\server.js
+Error: Cannot find module './swagger.json'
+Require stack:
+- C:\Users\HP\Desktop\My-Projects\complete-node-backend\dist\app.js
+- C:\Users\HP\Desktop\My-Projects\complete-node-backend\dist\server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1143:15)
+    at Module._load (node:internal/modules/cjs/loader:984:27)
+    at Module.require (node:internal/modules/cjs/loader:1231:19)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (C:\Users\HP\Desktop\My-Projects\complete-node-backend\dist\app.js:43:25)
+    at Module._compile (node:internal/modules/cjs/loader:1369:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)
+    at Module.load (node:internal/modules/cjs/loader:1206:32)
+    at Module._load (node:internal/modules/cjs/loader:1022:12)
+    at Module.require (node:internal/modules/cjs/loader:1231:19)
+2024-04-20 01:01:09 error: [POST] /categories >> StatusCode:: 400, Message:: img must be a hexadecimal color, slug must be a hexadecimal color
+2024-04-20 01:02:26 error: [POST] /categories >> StatusCode:: 400, Message:: slug must be a hexadecimal color
+2024-04-20 10:39:43 error: [POST] /categories >> StatusCode:: 400, Message:: img must be a hexadecimal color, slug must be a hexadecimal color
+2024-04-20 10:40:10 error: [POST] /categories >> StatusCode:: 400, Message:: img must be a hexadecimal color, slug must be a hexadecimal color
+2024-04-20 11:07:20 error: [DELETE] /categories >> StatusCode:: 404, Message:: Category not found
+2024-04-20 11:09:25 error: [DELETE] /categories >> StatusCode:: 404, Message:: Category not found
+2024-04-20 11:09:57 error: [DELETE] /categories >> StatusCode:: 404, Message:: Category not found
+2024-04-20 11:11:14 error: [DELETE] /categories >> StatusCode:: 404, Message:: Category not found
+2024-04-20 11:11:24 error: [DELETE] /categories >> StatusCode:: 404, Message:: Category not found
+2024-04-20 11:15:29 error: [DELETE] /categories >> StatusCode:: 404, Message:: Category not found
+2024-04-20 20:32:46 error: uncaughtException: querySrv ETIMEOUT _mongodb._tcp.cluster0.ywzmv7b.mongodb.net
+Error: querySrv ETIMEOUT _mongodb._tcp.cluster0.ywzmv7b.mongodb.net
+    at QueryReqWrap.onresolve [as oncomplete] (node:internal/dns/promises:275:17)
+2024-04-20 20:34:26 error: uncaughtException: querySrv ETIMEOUT _mongodb._tcp.cluster0.ywzmv7b.mongodb.net
+Error: querySrv ETIMEOUT _mongodb._tcp.cluster0.ywzmv7b.mongodb.net
+    at QueryReqWrap.onresolve [as oncomplete] (node:internal/dns/promises:275:17)

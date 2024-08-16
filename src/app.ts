@@ -1,0 +1,96 @@
+import 'reflect-metadata';
+import compression from 'compression';
+import cookieParser from 'cookie-parser';
+import cors from 'cors';
+import express from 'express';
+import helmet from 'helmet';
+import hpp from 'hpp';
+import morgan from 'morgan';
+import swaggerJSDoc from 'swagger-jsdoc';
+import swaggerUi from 'swagger-ui-express';
+import { NODE_ENV, PORT, LOG_FORMAT, ORIGIN, CREDENTIALS } from '@config';
+import { dbConnection } from '@database';
+import { Routes } from '@interfaces/routes.interface';
+import { ErrorMiddleware } from '@middlewares/error.middleware';
+import { logger, stream } from '@utils/logger';
+import mongoose from 'mongoose';
+
+mongoose.set('strictQuery', false); // or true, depending on your needs
+
+export class App {
+  public app: express.Application;
+  public env: string;
+  public port: string | number;
+
+  constructor(routes: Routes[]) {
+    this.app = express();
+    this.env = NODE_ENV || 'development';
+    this.port = PORT || 5000;
+
+    this.connectToDatabase();
+    this.initializeMiddlewares();
+    this.initializeRoutes(routes);
+    this.initializeSwagger();
+    this.initializeErrorHandling();
+  }
+
+  public listen() {
+    this.app.listen(this.port, () => {
+      logger.info(`=================================`);
+      logger.info(`======= ENV: ${this.env} =======`);
+      logger.info(`🚀 App listening on the port ${this.port}`);
+      logger.info(`=================================`);
+    });
+  }
+
+  public getServer() {
+    return this.app;
+  }
+
+  private async connectToDatabase() {
+    await dbConnection();
+  }
+
+  private initializeMiddlewares() {
+    this.app.use(morgan(LOG_FORMAT, { stream }));
+    this.app.use(cors({ origin: 'http://localhost:3001', credentials: true })); // Update the origin as needed
+    this.app.use(hpp());
+    this.app.use(helmet());
+    this.app.use(compression());
+    this.app.use(express.json());
+    this.app.use(express.urlencoded({ extended: true }));
+    this.app.use(cookieParser());
+  }
+
+  private initializeRoutes(routes: Routes[]) {
+    routes.forEach(route => {
+      this.app.use('/', route.router);
+    });
+  }
+
+  private initializeSwagger() {
+    const options = {
+      swaggerDefinition: {
+        info: {
+          title: 'REST API',
+          version: '1.0.0',
+          description: 'Example docs',
+        },
+      },
+      apis: ['./src/routes/*.route.ts', './swagger.yaml'], // Ensure correct paths
+    };
+
+    try {
+      const specs = swaggerJSDoc(options);
+      this.app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(specs));
+      logger.info('Swagger initialized successfully');
+    } catch (error) {
+      logger.error('Error initializing Swagger:', error);
+      throw new Error('Failed to initialize Swagger'); // Rethrow to crash the app for debugging
+    }
+  }
+
+  private initializeErrorHandling() {
+    this.app.use(ErrorMiddleware);
+  }
+}

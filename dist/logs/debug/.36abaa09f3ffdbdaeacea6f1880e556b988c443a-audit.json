@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": false,
+        "amount": 30
+    },
+    "auditLog": "C:\\Users\\HP\\Desktop\\My-Projects\\complete-node-backend\\dist\\logs\\debug\\.36abaa09f3ffdbdaeacea6f1880e556b988c443a-audit.json",
+    "files": [
+        {
+            "date": 1713566325296,
+            "name": "C:\\Users\\HP\\Desktop\\My-Projects\\complete-node-backend\\dist\\logs\\debug\\2024-04-20.log",
+            "hash": "fe292fa94785415dae297b4bf4aec92c6363ad204a99c6764e985d16252bede2"
+        }
+    ],
+    "hashType": "sha256"
+}
