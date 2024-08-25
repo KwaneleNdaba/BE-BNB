@@ -19,8 +19,8 @@ export class UserService {
   }
 
   public async createUser(userData: User): Promise<User> {
-    const findUser: User = await UserModel.findOne({ email: userData.email });
-    if (findUser) throw new HttpException(409, `This email ${userData.email} already exists`);
+    const findUser: User = await UserModel.findOne({ username: userData.username });
+    if (findUser) throw new HttpException(409, `This username ${userData.username} already exists`);
 
     const hashedPassword = await hash(userData.password, 10);
     const createUserData: User = await UserModel.create({ ...userData, password: hashedPassword });
@@ -29,9 +29,9 @@ export class UserService {
   }
 
   public async updateUser(userId: string, userData: User): Promise<User> {
-    if (userData.email) {
-      const findUser: User = await UserModel.findOne({ email: userData.email });
-      if (findUser && findUser._id != userId) throw new HttpException(409, `This email ${userData.email} already exists`);
+    if (userData.username) {
+      const findUser: User = await UserModel.findOne({ username: userData.username });
+      if (findUser && findUser._id != userId) throw new HttpException(409, `This username ${userData.username} already exists`);
     }
 
     if (userData.password) {
@@ -39,7 +39,7 @@ export class UserService {
       userData = { ...userData, password: hashedPassword };
     }
 
-    const updateUserById: User = await UserModel.findByIdAndUpdate(userId, { userData });
+    const updateUserById: User = await UserModel.findByIdAndUpdate(userId, userData);
     if (!updateUserById) throw new HttpException(409, "User doesn't exist");
 
     return updateUserById;

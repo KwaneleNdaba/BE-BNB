@@ -18,30 +18,24 @@ _export(exports, {
 });
 const _fs = require("fs");
 const _path = require("path");
-const _winston = /*#__PURE__*/ _interop_require_default(require("winston"));
-const _winstondailyrotatefile = /*#__PURE__*/ _interop_require_default(require("winston-daily-rotate-file"));
+const _winston = _interop_require_default(require("winston"));
+const _winstondailyrotatefile = _interop_require_default(require("winston-daily-rotate-file"));
 const _config = require("../config");
 function _interop_require_default(obj) {
     return obj && obj.__esModule ? obj : {
         default: obj
     };
 }
-// logs dir
 const logDir = (0, _path.join)(__dirname, _config.LOG_DIR);
 if (!(0, _fs.existsSync)(logDir)) {
     (0, _fs.mkdirSync)(logDir);
 }
-// Define log format
 const logFormat = _winston.default.format.printf(({ timestamp, level, message })=>`${timestamp} ${level}: ${message}`);
-/*
- * Log Level
- * error: 0, warn: 1, info: 2, http: 3, verbose: 4, debug: 5, silly: 6
- */ const logger = _winston.default.createLogger({
+const logger = _winston.default.createLogger({
     format: _winston.default.format.combine(_winston.default.format.timestamp({
         format: 'YYYY-MM-DD HH:mm:ss'
     }), logFormat),
     transports: [
-        // debug log setting
         new _winstondailyrotatefile.default({
             level: 'debug',
             datePattern: 'YYYY-MM-DD',
@@ -51,7 +45,6 @@ const logFormat = _winston.default.format.printf(({ timestamp, level, message })
             json: false,
             zippedArchive: true
         }),
-        // error log setting
         new _winstondailyrotatefile.default({
             level: 'error',
             datePattern: 'YYYY-MM-DD',

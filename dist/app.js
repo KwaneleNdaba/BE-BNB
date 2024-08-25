@@ -9,19 +9,20 @@ Object.defineProperty(exports, "App", {
     }
 });
 require("reflect-metadata");
-const _compression = /*#__PURE__*/ _interop_require_default(require("compression"));
-const _cookieparser = /*#__PURE__*/ _interop_require_default(require("cookie-parser"));
-const _cors = /*#__PURE__*/ _interop_require_default(require("cors"));
-const _express = /*#__PURE__*/ _interop_require_default(require("express"));
-const _helmet = /*#__PURE__*/ _interop_require_default(require("helmet"));
-const _hpp = /*#__PURE__*/ _interop_require_default(require("hpp"));
-const _morgan = /*#__PURE__*/ _interop_require_default(require("morgan"));
-const _swaggerjsdoc = /*#__PURE__*/ _interop_require_default(require("swagger-jsdoc"));
-const _swaggeruiexpress = /*#__PURE__*/ _interop_require_default(require("swagger-ui-express"));
+const _compression = _interop_require_default(require("compression"));
+const _cookieparser = _interop_require_default(require("cookie-parser"));
+const _cors = _interop_require_default(require("cors"));
+const _express = _interop_require_default(require("express"));
+const _helmet = _interop_require_default(require("helmet"));
+const _hpp = _interop_require_default(require("hpp"));
+const _morgan = _interop_require_default(require("morgan"));
+const _swaggerjsdoc = _interop_require_default(require("swagger-jsdoc"));
+const _swaggeruiexpress = _interop_require_default(require("swagger-ui-express"));
 const _config = require("./config");
 const _database = require("./database");
 const _errormiddleware = require("./middlewares/error.middleware");
 const _logger = require("./utils/logger");
+const _mongoose = _interop_require_default(require("mongoose"));
 function _define_property(obj, key, value) {
     if (key in obj) {
         Object.defineProperty(obj, key, {
@@ -40,6 +41,7 @@ function _interop_require_default(obj) {
         default: obj
     };
 }
+_mongoose.default.set('strictQuery', false);
 let App = class App {
     listen() {
         this.app.listen(this.port, ()=>{
@@ -61,7 +63,7 @@ let App = class App {
         }));
         this.app.use((0, _cors.default)({
             origin: 'http://localhost:3001',
-            credentials: _config.CREDENTIALS
+            credentials: true
         }));
         this.app.use((0, _hpp.default)());
         this.app.use((0, _helmet.default)());
@@ -88,11 +90,17 @@ let App = class App {
             },
             apis: [
                 './src/routes/*.route.ts',
-                'swagger.yaml'
+                './swagger.yaml'
             ]
         };
-        const specs = (0, _swaggerjsdoc.default)(options);
-        this.app.use('/api-docs', _swaggeruiexpress.default.serve, _swaggeruiexpress.default.setup(specs));
+        try {
+            const specs = (0, _swaggerjsdoc.default)(options);
+            this.app.use('/api-docs', _swaggeruiexpress.default.serve, _swaggeruiexpress.default.setup(specs));
+            _logger.logger.info('Swagger initialized successfully');
+        } catch (error) {
+            _logger.logger.error('Error initializing Swagger:', error);
+            throw new Error('Failed to initialize Swagger');
+        }
     }
     initializeErrorHandling() {
         this.app.use(_errormiddleware.ErrorMiddleware);
@@ -103,7 +111,7 @@ let App = class App {
         _define_property(this, "port", void 0);
         this.app = (0, _express.default)();
         this.env = _config.NODE_ENV || 'development';
-        this.port = _config.PORT || 3000;
+        this.port = _config.PORT || 5000;
         this.connectToDatabase();
         this.initializeMiddlewares();
         this.initializeRoutes(routes);

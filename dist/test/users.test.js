@@ -2,9 +2,9 @@
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
-const _bcrypt = /*#__PURE__*/ _interop_require_default(require("bcrypt"));
-const _mongoose = /*#__PURE__*/ _interop_require_default(require("mongoose"));
-const _supertest = /*#__PURE__*/ _interop_require_default(require("supertest"));
+const _bcrypt = _interop_require_default(require("bcrypt"));
+const _mongoose = _interop_require_default(require("mongoose"));
+const _supertest = _interop_require_default(require("supertest"));
 const _app = require("../app");
 const _usersroute = require("../routes/users.route");
 function _interop_require_default(obj) {

@@ -12,7 +12,7 @@ const _mongoose = require("mongoose");
 const _config = require("../config");
 const dbConnection = async ()=>{
     const dbConfig = {
-        url: `mongodb+srv://kwanelendaba113:LTSNsskk113@cluster0.ywzmv7b.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0`,
+        url: `mongodb+srv://kwanele:LTSNsskk113@cluster0.npgw9.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0`,
         options: {
             useNewUrlParser: true,
             useUnifiedTopology: true

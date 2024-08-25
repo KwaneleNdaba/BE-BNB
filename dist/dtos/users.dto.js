@@ -41,14 +41,16 @@ function _ts_metadata(k, v) {
 }
 let CreateUserDto = class CreateUserDto {
     constructor(){
-        _define_property(this, "email", void 0);
+        _define_property(this, "username", void 0);
         _define_property(this, "password", void 0);
+        _define_property(this, "role", void 0);
     }
 };
 _ts_decorate([
-    (0, _classvalidator.IsEmail)(),
+    (0, _classvalidator.IsString)(),
+    (0, _classvalidator.IsNotEmpty)(),
     _ts_metadata("design:type", String)
-], CreateUserDto.prototype, "email", void 0);
+], CreateUserDto.prototype, "username", void 0);
 _ts_decorate([
     (0, _classvalidator.IsString)(),
     (0, _classvalidator.IsNotEmpty)(),
@@ -56,6 +58,11 @@ _ts_decorate([
     (0, _classvalidator.MaxLength)(32),
     _ts_metadata("design:type", String)
 ], CreateUserDto.prototype, "password", void 0);
+_ts_decorate([
+    (0, _classvalidator.IsString)(),
+    (0, _classvalidator.IsNotEmpty)(),
+    _ts_metadata("design:type", String)
+], CreateUserDto.prototype, "role", void 0);
 let UpdateUserDto = class UpdateUserDto {
     constructor(){
         _define_property(this, "password", void 0);

@@ -1,0 +1,298 @@
+2024-08-25 17:26:47 error: uncaughtException: Cannot find module '@dtos/category.dto'
+Require stack:
+- C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\src\routes\category.route.ts
+- C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\src\server.ts
+Error: Cannot find module '@dtos/category.dto'
+Require stack:
+- C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\src\routes\category.route.ts
+- C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\src\server.ts
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:1202:15)
+    at Function.Module._resolveFilename.sharedData.moduleResolveFilenameHook.installedValue (C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\node_modules\@cspotcode\source-map-support\source-map-support.js:811:30)
+    at Function.Module._resolveFilename (C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\node_modules\tsconfig-paths\src\register.ts:115:36)
+    at Function.Module._load (node:internal/modules/cjs/loader:1027:27)
+    at Module.require (node:internal/modules/cjs/loader:1290:19)
+    at require (node:internal/modules/helpers:188:18)
+    at Object.<anonymous> (C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\src\routes\category.route.ts:3:1)
+    at Module._compile (node:internal/modules/cjs/loader:1455:14)
+    at Module.m._compile (C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\node_modules\ts-node\src\index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1534:10)
+2024-08-25 17:28:20 error: uncaughtException: Cannot find module '@models/category.model'
+Require stack:
+- C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\src\services\category.service.ts
+- C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\src\controllers\category.controller.ts
+- C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\src\routes\category.route.ts
+- C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\src\server.ts
+Error: Cannot find module '@models/category.model'
+Require stack:
+- C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\src\services\category.service.ts
+- C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\src\controllers\category.controller.ts
+- C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\src\routes\category.route.ts
+- C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\src\server.ts
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:1202:15)
+    at Function.Module._resolveFilename.sharedData.moduleResolveFilenameHook.installedValue (C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\node_modules\@cspotcode\source-map-support\source-map-support.js:811:30)
+    at Function.Module._resolveFilename (C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\node_modules\tsconfig-paths\src\register.ts:115:36)
+    at Function.Module._load (node:internal/modules/cjs/loader:1027:27)
+    at Module.require (node:internal/modules/cjs/loader:1290:19)
+    at require (node:internal/modules/helpers:188:18)
+    at Object.<anonymous> (C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\src\services\category.service.ts:3:1)
+    at Module._compile (node:internal/modules/cjs/loader:1455:14)
+    at Module.m._compile (C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\node_modules\ts-node\src\index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1534:10)
+2024-08-25 17:28:47 error: uncaughtException: Cannot find module '@models/category.model'
+Require stack:
+- C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\src\services\category.service.ts
+- C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\src\controllers\category.controller.ts
+- C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\src\routes\category.route.ts
+- C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\src\server.ts
+Error: Cannot find module '@models/category.model'
+Require stack:
+- C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\src\services\category.service.ts
+- C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\src\controllers\category.controller.ts
+- C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\src\routes\category.route.ts
+- C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\src\server.ts
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:1202:15)
+    at Function.Module._resolveFilename.sharedData.moduleResolveFilenameHook.installedValue (C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\node_modules\@cspotcode\source-map-support\source-map-support.js:811:30)
+    at Function.Module._resolveFilename (C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\node_modules\tsconfig-paths\src\register.ts:115:36)
+    at Function.Module._load (node:internal/modules/cjs/loader:1027:27)
+    at Module.require (node:internal/modules/cjs/loader:1290:19)
+    at require (node:internal/modules/helpers:188:18)
+    at Object.<anonymous> (C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\src\services\category.service.ts:3:1)
+    at Module._compile (node:internal/modules/cjs/loader:1455:14)
+    at Module.m._compile (C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\node_modules\ts-node\src\index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1534:10)
+2024-08-25 17:30:17 error: uncaughtException: Cannot find module '@controllers/category.controller'
+Require stack:
+- C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\src\routes\category.route.ts
+- C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\src\server.ts
+Error: Cannot find module '@controllers/category.controller'
+Require stack:
+- C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\src\routes\category.route.ts
+- C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\src\server.ts
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:1202:15)
+    at Function.Module._resolveFilename.sharedData.moduleResolveFilenameHook.installedValue (C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\node_modules\@cspotcode\source-map-support\source-map-support.js:811:30)
+    at Function.Module._resolveFilename (C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\node_modules\tsconfig-paths\src\register.ts:115:36)
+    at Function.Module._load (node:internal/modules/cjs/loader:1027:27)
+    at Module.require (node:internal/modules/cjs/loader:1290:19)
+    at require (node:internal/modules/helpers:188:18)
+    at Object.<anonymous> (C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\src\routes\category.route.ts:2:1)
+    at Module._compile (node:internal/modules/cjs/loader:1455:14)
+    at Module.m._compile (C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\node_modules\ts-node\src\index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1534:10)
+2024-08-25 17:30:40 error: uncaughtException: Cannot find module '@controllers/category.controller'
+Require stack:
+- C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\src\routes\category.route.ts
+- C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\src\server.ts
+Error: Cannot find module '@controllers/category.controller'
+Require stack:
+- C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\src\routes\category.route.ts
+- C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\src\server.ts
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:1202:15)
+    at Function.Module._resolveFilename.sharedData.moduleResolveFilenameHook.installedValue (C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\node_modules\@cspotcode\source-map-support\source-map-support.js:811:30)
+    at Function.Module._resolveFilename (C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\node_modules\tsconfig-paths\src\register.ts:115:36)
+    at Function.Module._load (node:internal/modules/cjs/loader:1027:27)
+    at Module.require (node:internal/modules/cjs/loader:1290:19)
+    at require (node:internal/modules/helpers:188:18)
+    at Object.<anonymous> (C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\src\routes\category.route.ts:2:1)
+    at Module._compile (node:internal/modules/cjs/loader:1455:14)
+    at Module.m._compile (C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\node_modules\ts-node\src\index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1534:10)
+2024-08-25 17:31:30 error: uncaughtException: Cannot find module '@models/category.model'
+Require stack:
+- C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\src\services\category.service.ts
+- C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\src\controllers\category.controller.ts
+- C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\src\routes\category.route.ts
+- C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\src\server.ts
+Error: Cannot find module '@models/category.model'
+Require stack:
+- C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\src\services\category.service.ts
+- C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\src\controllers\category.controller.ts
+- C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\src\routes\category.route.ts
+- C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\src\server.ts
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:1202:15)
+    at Function.Module._resolveFilename.sharedData.moduleResolveFilenameHook.installedValue (C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\node_modules\@cspotcode\source-map-support\source-map-support.js:811:30)
+    at Function.Module._resolveFilename (C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\node_modules\tsconfig-paths\src\register.ts:115:36)
+    at Function.Module._load (node:internal/modules/cjs/loader:1027:27)
+    at Module.require (node:internal/modules/cjs/loader:1290:19)
+    at require (node:internal/modules/helpers:188:18)
+    at Object.<anonymous> (C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\src\services\category.service.ts:3:1)
+    at Module._compile (node:internal/modules/cjs/loader:1455:14)
+    at Module.m._compile (C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\node_modules\ts-node\src\index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1534:10)
+2024-08-25 17:33:12 error: uncaughtException: Cannot find module '@controllers/category.controller'
+Require stack:
+- C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\src\routes\category.route.ts
+- C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\src\server.ts
+Error: Cannot find module '@controllers/category.controller'
+Require stack:
+- C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\src\routes\category.route.ts
+- C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\src\server.ts
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:1202:15)
+    at Function.Module._resolveFilename.sharedData.moduleResolveFilenameHook.installedValue (C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\node_modules\@cspotcode\source-map-support\source-map-support.js:811:30)
+    at Function.Module._resolveFilename (C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\node_modules\tsconfig-paths\src\register.ts:115:36)
+    at Function.Module._load (node:internal/modules/cjs/loader:1027:27)
+    at Module.require (node:internal/modules/cjs/loader:1290:19)
+    at require (node:internal/modules/helpers:188:18)
+    at Object.<anonymous> (C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\src\routes\category.route.ts:2:1)
+    at Module._compile (node:internal/modules/cjs/loader:1455:14)
+    at Module.m._compile (C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\node_modules\ts-node\src\index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1534:10)
+2024-08-25 17:34:57 error: uncaughtException: Cannot find module './routes/category.route'
+Require stack:
+- C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\src\server.ts
+Error: Cannot find module './routes/category.route'
+Require stack:
+- C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\src\server.ts
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:1202:15)
+    at Function.Module._resolveFilename.sharedData.moduleResolveFilenameHook.installedValue (C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\node_modules\@cspotcode\source-map-support\source-map-support.js:811:30)
+    at Function.Module._resolveFilename (C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\node_modules\tsconfig-paths\src\register.ts:115:36)
+    at Function.Module._load (node:internal/modules/cjs/loader:1027:27)
+    at Module.require (node:internal/modules/cjs/loader:1290:19)
+    at require (node:internal/modules/helpers:188:18)
+    at Object.<anonymous> (C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\src\server.ts:5:1)
+    at Module._compile (node:internal/modules/cjs/loader:1455:14)
+    at Module.m._compile (C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\node_modules\ts-node\src\index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1534:10)
+2024-08-25 17:35:46 error: uncaughtException: Cannot find module './routes/category.route'
+Require stack:
+- C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\src\server.ts
+Error: Cannot find module './routes/category.route'
+Require stack:
+- C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\src\server.ts
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:1202:15)
+    at Function.Module._resolveFilename.sharedData.moduleResolveFilenameHook.installedValue (C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\node_modules\@cspotcode\source-map-support\source-map-support.js:811:30)
+    at Function.Module._resolveFilename (C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\node_modules\tsconfig-paths\src\register.ts:115:36)
+    at Function.Module._load (node:internal/modules/cjs/loader:1027:27)
+    at Module.require (node:internal/modules/cjs/loader:1290:19)
+    at require (node:internal/modules/helpers:188:18)
+    at Object.<anonymous> (C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\src\server.ts:5:1)
+    at Module._compile (node:internal/modules/cjs/loader:1455:14)
+    at Module.m._compile (C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\node_modules\ts-node\src\index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1534:10)
+2024-08-25 17:36:11 error: uncaughtException: Cannot find module './routes/category.route'
+Require stack:
+- C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\src\server.ts
+Error: Cannot find module './routes/category.route'
+Require stack:
+- C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\src\server.ts
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:1202:15)
+    at Function.Module._resolveFilename.sharedData.moduleResolveFilenameHook.installedValue (C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\node_modules\@cspotcode\source-map-support\source-map-support.js:811:30)
+    at Function.Module._resolveFilename (C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\node_modules\tsconfig-paths\src\register.ts:115:36)
+    at Function.Module._load (node:internal/modules/cjs/loader:1027:27)
+    at Module.require (node:internal/modules/cjs/loader:1290:19)
+    at require (node:internal/modules/helpers:188:18)
+    at Object.<anonymous> (C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\src\server.ts:5:1)
+    at Module._compile (node:internal/modules/cjs/loader:1455:14)
+    at Module.m._compile (C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\node_modules\ts-node\src\index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1534:10)
+2024-08-25 17:38:05 error: uncaughtException: Cannot find module './routes/category.route'
+Require stack:
+- C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\src\server.ts
+Error: Cannot find module './routes/category.route'
+Require stack:
+- C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\src\server.ts
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:1202:15)
+    at Function.Module._resolveFilename.sharedData.moduleResolveFilenameHook.installedValue (C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\node_modules\@cspotcode\source-map-support\source-map-support.js:811:30)
+    at Function.Module._resolveFilename (C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\node_modules\tsconfig-paths\src\register.ts:115:36)
+    at Function.Module._load (node:internal/modules/cjs/loader:1027:27)
+    at Module.require (node:internal/modules/cjs/loader:1290:19)
+    at require (node:internal/modules/helpers:188:18)
+    at Object.<anonymous> (C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\src\server.ts:5:1)
+    at Module._compile (node:internal/modules/cjs/loader:1455:14)
+    at Module.m._compile (C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\node_modules\ts-node\src\index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1534:10)
+2024-08-25 17:38:15 error: uncaughtException: Cannot find module './routes/category.route'
+Require stack:
+- C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\src\server.ts
+Error: Cannot find module './routes/category.route'
+Require stack:
+- C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\src\server.ts
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:1202:15)
+    at Function.Module._resolveFilename.sharedData.moduleResolveFilenameHook.installedValue (C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\node_modules\@cspotcode\source-map-support\source-map-support.js:811:30)
+    at Function.Module._resolveFilename (C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\node_modules\tsconfig-paths\src\register.ts:115:36)
+    at Function.Module._load (node:internal/modules/cjs/loader:1027:27)
+    at Module.require (node:internal/modules/cjs/loader:1290:19)
+    at require (node:internal/modules/helpers:188:18)
+    at Object.<anonymous> (C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\src\server.ts:5:1)
+    at Module._compile (node:internal/modules/cjs/loader:1455:14)
+    at Module.m._compile (C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\node_modules\ts-node\src\index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1534:10)
+2024-08-25 17:38:35 error: uncaughtException: Cannot find module './routes/category.route'
+Require stack:
+- C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\src\server.ts
+Error: Cannot find module './routes/category.route'
+Require stack:
+- C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\src\server.ts
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:1202:15)
+    at Function.Module._resolveFilename.sharedData.moduleResolveFilenameHook.installedValue (C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\node_modules\@cspotcode\source-map-support\source-map-support.js:811:30)
+    at Function.Module._resolveFilename (C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\node_modules\tsconfig-paths\src\register.ts:115:36)
+    at Function.Module._load (node:internal/modules/cjs/loader:1027:27)
+    at Module.require (node:internal/modules/cjs/loader:1290:19)
+    at require (node:internal/modules/helpers:188:18)
+    at Object.<anonymous> (C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\src\server.ts:5:1)
+    at Module._compile (node:internal/modules/cjs/loader:1455:14)
+    at Module.m._compile (C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\node_modules\ts-node\src\index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1534:10)
+2024-08-25 17:39:33 error: uncaughtException: Cannot find module './routes/category.route'
+Require stack:
+- C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\src\server.ts
+Error: Cannot find module './routes/category.route'
+Require stack:
+- C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\src\server.ts
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:1202:15)
+    at Function.Module._resolveFilename.sharedData.moduleResolveFilenameHook.installedValue (C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\node_modules\@cspotcode\source-map-support\source-map-support.js:811:30)
+    at Function.Module._resolveFilename (C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\node_modules\tsconfig-paths\src\register.ts:115:36)
+    at Function.Module._load (node:internal/modules/cjs/loader:1027:27)
+    at Module.require (node:internal/modules/cjs/loader:1290:19)
+    at require (node:internal/modules/helpers:188:18)
+    at Object.<anonymous> (C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\src\server.ts:5:1)
+    at Module._compile (node:internal/modules/cjs/loader:1455:14)
+    at Module.m._compile (C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\node_modules\ts-node\src\index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1534:10)
+2024-08-25 17:40:23 error: uncaughtException: Cannot find module './routes/category.route'
+Require stack:
+- C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\src\server.ts
+Error: Cannot find module './routes/category.route'
+Require stack:
+- C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\src\server.ts
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:1202:15)
+    at Function.Module._resolveFilename.sharedData.moduleResolveFilenameHook.installedValue (C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\node_modules\@cspotcode\source-map-support\source-map-support.js:811:30)
+    at Function.Module._resolveFilename (C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\node_modules\tsconfig-paths\src\register.ts:115:36)
+    at Function.Module._load (node:internal/modules/cjs/loader:1027:27)
+    at Module.require (node:internal/modules/cjs/loader:1290:19)
+    at require (node:internal/modules/helpers:188:18)
+    at Object.<anonymous> (C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\src\server.ts:5:1)
+    at Module._compile (node:internal/modules/cjs/loader:1455:14)
+    at Module.m._compile (C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\node_modules\ts-node\src\index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1534:10)
+2024-08-25 17:40:38 error: uncaughtException: Cannot find module './routes/category.route'
+Require stack:
+- C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\src\server.ts
+Error: Cannot find module './routes/category.route'
+Require stack:
+- C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\src\server.ts
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:1202:15)
+    at Function.Module._resolveFilename.sharedData.moduleResolveFilenameHook.installedValue (C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\node_modules\@cspotcode\source-map-support\source-map-support.js:811:30)
+    at Function.Module._resolveFilename (C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\node_modules\tsconfig-paths\src\register.ts:115:36)
+    at Function.Module._load (node:internal/modules/cjs/loader:1027:27)
+    at Module.require (node:internal/modules/cjs/loader:1290:19)
+    at require (node:internal/modules/helpers:188:18)
+    at Object.<anonymous> (C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\src\server.ts:5:1)
+    at Module._compile (node:internal/modules/cjs/loader:1455:14)
+    at Module.m._compile (C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\node_modules\ts-node\src\index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1534:10)
+2024-08-25 17:41:25 error: uncaughtException: Cannot find module './routes/category.route'
+Require stack:
+- C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\src\server.ts
+Error: Cannot find module './routes/category.route'
+Require stack:
+- C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\src\server.ts
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:1202:15)
+    at Function.Module._resolveFilename.sharedData.moduleResolveFilenameHook.installedValue (C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\node_modules\@cspotcode\source-map-support\source-map-support.js:811:30)
+    at Function.Module._resolveFilename (C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\node_modules\tsconfig-paths\src\register.ts:115:36)
+    at Function.Module._load (node:internal/modules/cjs/loader:1027:27)
+    at Module.require (node:internal/modules/cjs/loader:1290:19)
+    at require (node:internal/modules/helpers:188:18)
+    at Object.<anonymous> (C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\src\server.ts:5:1)
+    at Module._compile (node:internal/modules/cjs/loader:1455:14)
+    at Module.m._compile (C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\node_modules\ts-node\src\index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1534:10)

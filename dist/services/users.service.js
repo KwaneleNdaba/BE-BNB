@@ -84,9 +84,9 @@ let UserService = class UserService {
     }
     async createUser(userData) {
         const findUser = await _usersmodel.UserModel.findOne({
-            email: userData.email
+            username: userData.username
         });
-        if (findUser) throw new _HttpException.HttpException(409, `This email ${userData.email} already exists`);
+        if (findUser) throw new _HttpException.HttpException(409, `This username ${userData.username} already exists`);
         const hashedPassword = await (0, _bcrypt.hash)(userData.password, 10);
         const createUserData = await _usersmodel.UserModel.create(_object_spread_props(_object_spread({}, userData), {
             password: hashedPassword
@@ -94,11 +94,11 @@ let UserService = class UserService {
         return createUserData;
     }
     async updateUser(userId, userData) {
-        if (userData.email) {
+        if (userData.username) {
             const findUser = await _usersmodel.UserModel.findOne({
-                email: userData.email
+                username: userData.username
             });
-            if (findUser && findUser._id != userId) throw new _HttpException.HttpException(409, `This email ${userData.email} already exists`);
+            if (findUser && findUser._id != userId) throw new _HttpException.HttpException(409, `This username ${userData.username} already exists`);
         }
         if (userData.password) {
             const hashedPassword = await (0, _bcrypt.hash)(userData.password, 10);
@@ -106,9 +106,7 @@ let UserService = class UserService {
                 password: hashedPassword
             });
         }
-        const updateUserById = await _usersmodel.UserModel.findByIdAndUpdate(userId, {
-            userData
-        });
+        const updateUserById = await _usersmodel.UserModel.findByIdAndUpdate(userId, userData);
         if (!updateUserById) throw new _HttpException.HttpException(409, "User doesn't exist");
         return updateUserById;
     }

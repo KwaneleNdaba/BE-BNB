@@ -2,9 +2,9 @@
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
-const _supertest = /*#__PURE__*/ _interop_require_default(require("supertest"));
-const _app = /*#__PURE__*/ _interop_require_default(require("../app"));
-const _indexroute = /*#__PURE__*/ _interop_require_default(require("routes/index.route"));
+const _supertest = _interop_require_default(require("supertest"));
+const _app = _interop_require_default(require("../app"));
+const _indexroute = _interop_require_default(require("../routes/index.route"));
 function _interop_require_default(obj) {
     return obj && obj.__esModule ? obj : {
         default: obj

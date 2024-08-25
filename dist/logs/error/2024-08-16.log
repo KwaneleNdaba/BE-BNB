@@ -1,0 +1,56 @@
+2024-08-16 15:25:01 error: uncaughtException: querySrv ENOTFOUND _mongodb._tcp.cluster0.ywzmv7b.mongodb.net
+Error: querySrv ENOTFOUND _mongodb._tcp.cluster0.ywzmv7b.mongodb.net
+    at QueryReqWrap.onresolve [as oncomplete] (node:internal/dns/promises:275:17)
+2024-08-16 15:26:36 error: uncaughtException: querySrv ENOTFOUND _mongodb._tcp.cluster0.ywzmv7b.mongodb.net
+Error: querySrv ENOTFOUND _mongodb._tcp.cluster0.ywzmv7b.mongodb.net
+    at QueryReqWrap.onresolve [as oncomplete] (node:internal/dns/promises:275:17)
+2024-08-16 15:28:00 error: uncaughtException: querySrv ENOTFOUND _mongodb._tcp.cluster0.ywzmv7b.mongodb.net
+Error: querySrv ENOTFOUND _mongodb._tcp.cluster0.ywzmv7b.mongodb.net
+    at QueryReqWrap.onresolve [as oncomplete] (node:internal/dns/promises:275:17)
+2024-08-16 15:29:18 error: uncaughtException: querySrv ENOTFOUND _mongodb._tcp.cluster0.ywzmv7b.mongodb.net
+Error: querySrv ENOTFOUND _mongodb._tcp.cluster0.ywzmv7b.mongodb.net
+    at QueryReqWrap.onresolve [as oncomplete] (node:internal/dns/promises:275:17)
+2024-08-16 15:30:01 error: uncaughtException: querySrv ENOTFOUND _mongodb._tcp.cluster0.ywzmv7b.mongodb.net
+Error: querySrv ENOTFOUND _mongodb._tcp.cluster0.ywzmv7b.mongodb.net
+    at QueryReqWrap.onresolve [as oncomplete] (node:internal/dns/promises:275:17)
+2024-08-16 15:30:28 error: uncaughtException: querySrv ENOTFOUND _mongodb._tcp.cluster0.ywzmv7b.mongodb.net
+Error: querySrv ENOTFOUND _mongodb._tcp.cluster0.ywzmv7b.mongodb.net
+    at QueryReqWrap.onresolve [as oncomplete] (node:internal/dns/promises:275:17)
+2024-08-16 15:31:28 error: uncaughtException: querySrv ENOTFOUND _mongodb._tcp.cluster0.ywzmv7b.mongodb.net
+Error: querySrv ENOTFOUND _mongodb._tcp.cluster0.ywzmv7b.mongodb.net
+    at QueryReqWrap.onresolve [as oncomplete] (node:internal/dns/promises:275:17)
+2024-08-16 15:33:23 error: uncaughtException: querySrv ENOTFOUND _mongodb._tcp.cluster0.ywzmv7b.mongodb.net
+Error: querySrv ENOTFOUND _mongodb._tcp.cluster0.ywzmv7b.mongodb.net
+    at QueryReqWrap.onresolve [as oncomplete] (node:internal/dns/promises:275:17)
+2024-08-16 15:35:02 error: uncaughtException: querySrv ENOTFOUND _mongodb._tcp.cluster0.ywzmv7b.mongodb.net
+Error: querySrv ENOTFOUND _mongodb._tcp.cluster0.ywzmv7b.mongodb.net
+    at QueryReqWrap.onresolve [as oncomplete] (node:internal/dns/promises:275:17)
+2024-08-16 15:35:26 error: uncaughtException: querySrv ENOTFOUND _mongodb._tcp.cluster0.ywzmv7b.mongodb.net
+Error: querySrv ENOTFOUND _mongodb._tcp.cluster0.ywzmv7b.mongodb.net
+    at QueryReqWrap.onresolve [as oncomplete] (node:internal/dns/promises:275:17)
+2024-08-16 15:37:15 error: uncaughtException: querySrv ENOTFOUND _mongodb._tcp.cluster0.ywzmv7b.mongodb.net
+Error: querySrv ENOTFOUND _mongodb._tcp.cluster0.ywzmv7b.mongodb.net
+    at QueryReqWrap.onresolve [as oncomplete] (node:internal/dns/promises:275:17)
+2024-08-16 15:38:58 error: uncaughtException: querySrv ENOTFOUND _mongodb._tcp.cluster0.ywzmv7b.mongodb.net
+Error: querySrv ENOTFOUND _mongodb._tcp.cluster0.ywzmv7b.mongodb.net
+    at QueryReqWrap.onresolve [as oncomplete] (node:internal/dns/promises:275:17)
+2024-08-16 15:39:10 error: uncaughtException: querySrv ENOTFOUND _mongodb._tcp.cluster0.ywzmv7b.mongodb.net
+Error: querySrv ENOTFOUND _mongodb._tcp.cluster0.ywzmv7b.mongodb.net
+    at QueryReqWrap.onresolve [as oncomplete] (node:internal/dns/promises:275:17)
+2024-08-16 15:49:48 error: uncaughtException: querySrv ENOTFOUND _mongodb._tcp.cluster0.ywzmv7b.mongodb.net
+Error: querySrv ENOTFOUND _mongodb._tcp.cluster0.ywzmv7b.mongodb.net
+    at QueryReqWrap.onresolve [as oncomplete] (node:internal/dns/promises:275:17)
+2024-08-16 15:52:51 error: uncaughtException: 50440000:error:0A000438:SSL routines:ssl3_read_bytes:tlsv1 alert internal error:c:\ws\deps\openssl\openssl\ssl\record\rec_layer_s3.c:1590:SSL alert number 80
+
+MongooseServerSelectionError: 50440000:error:0A000438:SSL routines:ssl3_read_bytes:tlsv1 alert internal error:c:\ws\deps\openssl\openssl\ssl\record\rec_layer_s3.c:1590:SSL alert number 80
+
+    at NativeConnection.Connection.openUri (C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\node_modules\mongoose\lib\connection.js:825:32)
+    at C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\node_modules\mongoose\lib\index.js:414:10
+    at C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\node_modules\mongoose\lib\helpers\promiseOrCallback.js:41:5
+    at new Promise (<anonymous>)
+    at promiseOrCallback (C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\node_modules\mongoose\lib\helpers\promiseOrCallback.js:40:10)
+    at Mongoose._promiseOrCallback (C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\node_modules\mongoose\lib\index.js:1290:10)
+    at Mongoose.connect (C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\node_modules\mongoose\lib\index.js:413:20)
+    at dbConnection (C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\src\database\index.ts:17:16)
+    at App.connectToDatabase (C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\src\app.ts:51:23)
+    at new App (C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\src\app.ts:30:10)

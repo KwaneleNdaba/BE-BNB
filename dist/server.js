@@ -14,5 +14,8 @@ const app = new _app.App([
     new _categoryroute.CategoryRoute()
 ]);
 app.listen();
+process.on('uncaughtException', (error)=>{
+    console.error('Uncaught Exception:', error);
+});
 
 //# sourceMappingURL=server.js.map

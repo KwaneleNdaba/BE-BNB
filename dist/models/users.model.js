@@ -10,12 +10,16 @@ Object.defineProperty(exports, "UserModel", {
 });
 const _mongoose = require("mongoose");
 const UserSchema = new _mongoose.Schema({
-    email: {
+    username: {
         type: String,
         required: true,
         unique: true
     },
     password: {
+        type: String,
+        required: true
+    },
+    role: {
         type: String,
         required: true
     }
