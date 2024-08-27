@@ -1,12 +1,16 @@
-import { App } from '@/app';
+import { App } from './app';
 import { AuthRoute } from '@routes/auth.route';
 import { UserRoute } from '@routes/users.route';
+import { ReservationRoute } from '@routes/reservation.route';  
 import { ValidateEnv } from '@utils/validateEnv';
-import { CategoryRoute } from './routes/category.route';
 
 ValidateEnv();
 
-const app = new App([new UserRoute(), new AuthRoute(), new CategoryRoute() ]);
+const app = new App([
+  new UserRoute(),
+  new AuthRoute(),
+  new ReservationRoute(),  // Add the ReservationRoute here
+]);
 
 app.listen();
 

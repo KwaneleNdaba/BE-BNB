@@ -1,64 +1,66 @@
-import { model, Schema, Document } from 'mongoose';
+import { Schema, model, Document } from 'mongoose';
 
-interface Reservation {
-  guestName: string;
-  guestId: string;
-  propertyId: string;
-  checkInDate: Date;
-  checkOutDate: Date;
+export interface IReservation extends Document {
+  id: string;
+  images: string[];
+  type: string;
+  location: string;
   guests: number;
-  totalAmount: number;
-  paymentStatus: string;
-  specialRequests?: string;
-  createdAt: Date;
-  updatedAt: Date;
+  bedrooms: number;
+  bathrooms: number;
+  amenities: string[];
+  rating: number;
+  reviews: number;
+  price: number;
+  title: string;
+  host: string;
+  host_id: string;
+  weeklyDiscount: number;
+  cleaningFee: number;
+  serviceFee: number;
+  occupancyTaxes: number;
+  enhancedCleaning: boolean;
+  selfCheckIn: boolean;
+  description: string;
+  specificRatings: {
+    cleanliness: number;
+    communication: number;
+    checkIn: number;
+    accuracy: number;
+    location: number;
+    value: number;
+  };
 }
 
 const ReservationSchema: Schema = new Schema({
-  guestName: {
-    type: String,
-    required: true,
-  },
-  guestId: {
-    type: String,
-    required: true,
-  },
-  propertyId: {
-    type: String,
-    required: true,
-  },
-  checkInDate: {
-    type: Date,
-    required: true,
-  },
-  checkOutDate: {
-    type: Date,
-    required: true,
-  },
-  guests: {
-    type: Number,
-    required: true,
-  },
-  totalAmount: {
-    type: Number,
-    required: true,
-  },
-  paymentStatus: {
-    type: String,
-    required: true,
-    enum: ['Pending', 'Completed', 'Failed'],
-  },
-  specialRequests: {
-    type: String,
-  },
-  createdAt: {
-    type: Date,
-    default: Date.now,
-  },
-  updatedAt: {
-    type: Date,
-    default: Date.now,
+  images: { type: [String], required: true },
+  type: { type: String, required: true },
+  location: { type: String, required: true },
+  guests: { type: Number, required: true },
+  bedrooms: { type: Number, required: true },
+  bathrooms: { type: Number, required: true },
+  amenities: { type: [String], required: true },
+  rating: { type: Number, required: true },
+  reviews: { type: Number, required: true },
+  price: { type: Number, required: true },
+  title: { type: String, required: true },
+  host: { type: String, required: true },
+  host_id: { type: String, required: true },
+  weeklyDiscount: { type: Number, required: true },
+  cleaningFee: { type: Number, required: true },
+  serviceFee: { type: Number, required: true },
+  occupancyTaxes: { type: Number, required: true },
+  enhancedCleaning: { type: Boolean, required: true },
+  selfCheckIn: { type: Boolean, required: true },
+  description: { type: String, required: true },
+  specificRatings: {
+    cleanliness: { type: Number, required: true },
+    communication: { type: Number, required: true },
+    checkIn: { type: Number, required: true },
+    accuracy: { type: Number, required: true },
+    location: { type: Number, required: true },
+    value: { type: Number, required: true },
   },
 });
 
-export const ReservationModel = model<Reservation & Document>('Reservation', ReservationSchema);
+export const ReservationModel = model<IReservation>('Reservation', ReservationSchema);

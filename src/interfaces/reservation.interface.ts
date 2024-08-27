@@ -1,5 +1,5 @@
 export interface IReservation {
-    id: number;
+    id?: string;
     images: string[];
     type: string;
     location: string;

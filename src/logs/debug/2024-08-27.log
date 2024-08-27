@@ -1,0 +1,35 @@
+2024-08-27 21:43:09 info: =================================
+2024-08-27 21:43:09 info: ======= ENV: development =======
+2024-08-27 21:43:09 info: 🚀 App listening on the port 5000
+2024-08-27 21:43:09 info: =================================
+2024-08-27 21:43:26 info: [0mGET /api-docs/ [32m200[0m 13.281 ms - -[0m
+2024-08-27 21:43:26 info: [0mGET /api-docs/swagger-ui-init.js [32m200[0m 1.960 ms - -[0m
+2024-08-27 21:43:26 info: [0mGET /api-docs/swagger-ui.css [32m200[0m 18.712 ms - -[0m
+2024-08-27 21:43:26 info: [0mGET /api-docs/swagger-ui-standalone-preset.js [32m200[0m 16.667 ms - -[0m
+2024-08-27 21:43:26 info: [0mGET /api-docs/swagger-ui-bundle.js [32m200[0m 15.581 ms - -[0m
+2024-08-27 21:43:27 info: [0mGET /api-docs/favicon-32x32.png [32m200[0m 5.165 ms - 628[0m
+2024-08-27 21:49:00 info: =================================
+2024-08-27 21:49:00 info: ======= ENV: development =======
+2024-08-27 21:49:00 info: 🚀 App listening on the port 5000
+2024-08-27 21:49:00 info: =================================
+2024-08-27 21:49:08 info: [0mGET /api-docs/ [36m304[0m 17.675 ms - -[0m
+2024-08-27 21:49:08 info: [0mGET /api-docs/swagger-ui.css [36m304[0m 13.458 ms - -[0m
+2024-08-27 21:49:08 info: [0mGET /api-docs/swagger-ui-bundle.js [36m304[0m 13.509 ms - -[0m
+2024-08-27 21:49:08 info: [0mGET /api-docs/swagger-ui-standalone-preset.js [36m304[0m 12.008 ms - -[0m
+2024-08-27 21:49:08 info: [0mGET /api-docs/swagger-ui-init.js [32m200[0m 4.050 ms - -[0m
+2024-08-27 22:07:14 error: [POST] /reservations >> StatusCode:: 400, Message:: userId should not be empty,userId must be a string, propertyId should not be empty,propertyId must be a string, checkInDate should not be empty,checkInDate must be a valid ISO 8601 date string, checkOutDate should not be empty,checkOutDate must be a valid ISO 8601 date string
+2024-08-27 22:07:14 info: [0mPOST /reservations [33m400[0m 65.958 ms - 290[0m
+2024-08-27 22:11:03 info: =================================
+2024-08-27 22:11:03 info: ======= ENV: development =======
+2024-08-27 22:11:03 info: 🚀 App listening on the port 5000
+2024-08-27 22:11:03 info: =================================
+2024-08-27 22:11:11 error: [POST] /reservations >> StatusCode:: 400, Message:: propertyId should not be empty,propertyId must be a string, checkInDate should not be empty,checkInDate must be a valid ISO 8601 date string, checkOutDate should not be empty,checkOutDate must be a valid ISO 8601 date string
+2024-08-27 22:11:11 info: [0mPOST /reservations [33m400[0m 82.023 ms - 238[0m
+2024-08-27 22:13:54 info: =================================
+2024-08-27 22:13:54 info: ======= ENV: development =======
+2024-08-27 22:13:54 info: 🚀 App listening on the port 5000
+2024-08-27 22:13:54 info: =================================
+2024-08-27 22:14:02 info: [0mPOST /reservations [31m500[0m 99.623 ms - 882[0m
+2024-08-27 22:15:59 info: [0mPOST /reservations [32m201[0m 174.443 ms - 829[0m
+2024-08-27 22:18:16 info: [0mGET /reservations/host/host5678 [32m200[0m 426.727 ms - 832[0m
+2024-08-27 22:19:17 info: [0mDELETE /reservations/66ce33fe6a95f1b58016a145 [32m200[0m 92.901 ms - 829[0m

@@ -13,9 +13,6 @@ import { dbConnection } from '@database';
 import { Routes } from '@interfaces/routes.interface';
 import { ErrorMiddleware } from '@middlewares/error.middleware';
 import { logger, stream } from '@utils/logger';
-import mongoose from 'mongoose';
-
-mongoose.set('strictQuery', false); // or true, depending on your needs
 
 export class App {
   public app: express.Application;
@@ -25,7 +22,7 @@ export class App {
   constructor(routes: Routes[]) {
     this.app = express();
     this.env = NODE_ENV || 'development';
-    this.port = PORT || 5000;
+    this.port = PORT || 3000;
 
     this.connectToDatabase();
     this.initializeMiddlewares();
@@ -53,7 +50,7 @@ export class App {
 
   private initializeMiddlewares() {
     this.app.use(morgan(LOG_FORMAT, { stream }));
-    this.app.use(cors({ origin: 'http://localhost:3001', credentials: true })); // Update the origin as needed
+    this.app.use(cors({ origin: 'http://localhost:3001', credentials: CREDENTIALS }));
     this.app.use(hpp());
     this.app.use(helmet());
     this.app.use(compression());
@@ -77,18 +74,13 @@ export class App {
           description: 'Example docs',
         },
       },
-      apis: ['./src/routes/*.route.ts', './swagger.yaml'], // Ensure correct paths
+      apis: ['./src/routes/*.route.ts', 'swagger.yaml'], // Include all route files
     };
-
-    try {
-      const specs = swaggerJSDoc(options);
-      this.app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(specs));
-      logger.info('Swagger initialized successfully');
-    } catch (error) {
-      logger.error('Error initializing Swagger:', error);
-      throw new Error('Failed to initialize Swagger'); // Rethrow to crash the app for debugging
-    }
+  
+    const specs = swaggerJSDoc(options);
+    this.app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(specs));
   }
+  
 
   private initializeErrorHandling() {
     this.app.use(ErrorMiddleware);

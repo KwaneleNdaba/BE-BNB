@@ -1,8 +1,8 @@
 tags:
   - name: users
     description: Users API
-  - name: categories
-    description: Categories API
+  - name: reservations
+    description: Reservations API
 
 paths:
   # [GET] users
@@ -17,7 +17,6 @@ paths:
         500:
           description: 'Server Error'
 
-  # [POST] users
     post:
       tags:
         - users
@@ -58,7 +57,6 @@ paths:
         500:
           description: 'Server Error'
 
-  # [PUT] users/id
     put:
       tags:
         - users
@@ -84,7 +82,6 @@ paths:
         500:
           description: 'Server Error'
 
-  # [DELETE] users/id
     delete:
       tags:
         - users
@@ -102,19 +99,19 @@ paths:
         500:
           description: 'Server Error'
 
-  # [POST] category
-  /categories:
+  # [POST] reservation
+  /reservations:
     post:
       tags:
-        - categories
-      summary: Add Category
+        - reservations
+      summary: Create a Reservation
       parameters:
         - name: body
           in: body
-          description: Category Data
+          description: Reservation Data
           required: true
           schema:
-            $ref: '#/definitions/categories'
+            $ref: '#/definitions/reservations'
       responses:
         201:
           description: 'Created'
@@ -125,35 +122,56 @@ paths:
         500:
           description: 'Server Error'
 
-  # [GET] categories
+  # [GET] reservations by host ID
+  /reservations/host/{hostId}:
     get:
       tags:
-        - categories
-      summary: Get All Categories
+        - reservations
+      summary: Get Reservations by Host ID
+      parameters:
+        - name: hostId
+          in: path
+          description: Host ID
+          required: true
       responses:
         200:
           description: 'OK'
         500:
           description: 'Server Error'
 
-  # [DELETE] category/id
-    delete:
+  # [GET] reservations by user ID
+  /reservations/user/{userId}:
+    get:
       tags:
-        - categories
-      summary: Delete Category By Id
+        - reservations
+      summary: Get Reservations by User ID
       parameters:
-        - name: id
+        - name: userId
           in: path
-          description: Category Id
+          description: User ID
           required: true
       responses:
         200:
           description: 'OK'
-        409:
-          description: 'Conflict'
         500:
           description: 'Server Error'
-  
+
+  # [DELETE] reservation by ID
+  /reservations/{reservationId}:
+    delete:
+      tags:
+        - reservations
+      summary: Delete Reservation by ID
+      parameters:
+        - name: reservationId
+          in: path
+          description: Reservation ID
+          required: true
+      responses:
+        200:
+          description: 'OK'
+        500:
+          description: 'Server Error'
 
 definitions:
   users:
@@ -169,30 +187,28 @@ definitions:
         type: string
         description: User Password
 
-  categories:
+  reservations:
     type: object
     required:
-      - title
-      - desc
-      - color
-      - img
-      - slug
+      - host_id
+      - user_id
+      - start_date
+      - end_date
     properties:
-      title:
+      host_id:
         type: string
-        description: Category Title
-      desc:
+        description: Host ID
+      user_id:
         type: string
-        description: Category Description
-      color:
+        description: User ID
+      start_date:
         type: string
-        description: Category Color
-      img:
+        format: date
+        description: Reservation Start Date
+      end_date:
         type: string
-        description: Category Image URL
-      slug:
-        type: string
-        description: Category Slug
+        format: date
+        description: Reservation End Date
 
 schemes:
   - https

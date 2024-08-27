@@ -1,0 +1,116 @@
+2024-08-27 21:14:32 error: uncaughtException: _a.getMetadata is not a function
+TypeError: _a.getMetadata is not a function
+    at ContainerInstance.getServiceValue (C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\node_modules\src\container-instance.class.ts:276:44)
+    at ContainerInstance.get (C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\node_modules\src\container-instance.class.ts:54:36)
+    at Function.get (C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\node_modules\src\container.class.ts:61:32)
+    at new UserController (C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\src\controllers\users.controller.ts:7:27)
+    at new UserRoute (C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\src\routes\users.route.ts:10:17)
+    at Object.<anonymous> (C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\src\server.ts:10:3)
+    at Module._compile (node:internal/modules/cjs/loader:1455:14)
+    at Module.m._compile (C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\node_modules\ts-node\src\index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1534:10)
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\node_modules\ts-node\src\index.ts:1621:12)
+2024-08-27 21:16:52 error: uncaughtException: _a.getMetadata is not a function
+TypeError: _a.getMetadata is not a function
+    at ContainerInstance.getServiceValue (C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\node_modules\src\container-instance.class.ts:276:44)
+    at ContainerInstance.get (C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\node_modules\src\container-instance.class.ts:54:36)
+    at Function.get (C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\node_modules\src\container.class.ts:61:32)
+    at new UserController (C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\src\controllers\users.controller.ts:7:27)
+    at new UserRoute (C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\src\routes\users.route.ts:10:17)
+    at Object.<anonymous> (C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\src\server.ts:10:3)
+    at Module._compile (node:internal/modules/cjs/loader:1455:14)
+    at Module.m._compile (C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\node_modules\ts-node\src\index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1534:10)
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\node_modules\ts-node\src\index.ts:1621:12)
+2024-08-27 21:19:45 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/dtos/reservation.dto.ts[0m:[93m2[0m:[93m1[0m - [91merror[0m[90m TS1005: [0m'}' expected.
+
+[7m2[0m 
+[7m [0m [91m[0m
+[96msrc/dtos/reservation.dto.ts[0m:[93m1[0m:[93m36[0m - [91merror[0m[90m TS1109: [0mExpression expected.
+
+[7m1[0m import { IsString, IsNotEmpty, IsNu
+[7m [0m [91m                                   [0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/dtos/reservation.dto.ts[0m:[93m2[0m:[93m1[0m - [91merror[0m[90m TS1005: [0m'}' expected.
+
+[7m2[0m 
+[7m [0m [91m[0m
+[96msrc/dtos/reservation.dto.ts[0m:[93m1[0m:[93m36[0m - [91merror[0m[90m TS1109: [0mExpression expected.
+
+[7m1[0m import { IsString, IsNotEmpty, IsNu
+[7m [0m [91m                                   [0m
+
+    at createTSError (C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\node_modules\ts-node\src\index.ts:863:19)
+    at C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\node_modules\ts-node\src\index.ts:1379:34
+    at Object.compile (C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\node_modules\ts-node\src\index.ts:1458:13)
+    at Module.m._compile (C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\node_modules\ts-node\src\index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1534:10)
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1265:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:1081:12)
+    at Module.require (node:internal/modules/cjs/loader:1290:19)
+2024-08-27 21:20:04 error: uncaughtException: _a.getMetadata is not a function
+TypeError: _a.getMetadata is not a function
+    at ContainerInstance.getServiceValue (C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\node_modules\src\container-instance.class.ts:276:44)
+    at ContainerInstance.get (C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\node_modules\src\container-instance.class.ts:54:36)
+    at Function.get (C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\node_modules\src\container.class.ts:61:32)
+    at new UserController (C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\src\controllers\users.controller.ts:7:27)
+    at new UserRoute (C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\src\routes\users.route.ts:10:17)
+    at Object.<anonymous> (C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\src\server.ts:10:3)
+    at Module._compile (node:internal/modules/cjs/loader:1455:14)
+    at Module.m._compile (C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\node_modules\ts-node\src\index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1534:10)
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\node_modules\ts-node\src\index.ts:1621:12)
+2024-08-27 21:20:39 error: uncaughtException: _a.getMetadata is not a function
+TypeError: _a.getMetadata is not a function
+    at ContainerInstance.getServiceValue (C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\node_modules\src\container-instance.class.ts:276:44)
+    at ContainerInstance.get (C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\node_modules\src\container-instance.class.ts:54:36)
+    at Function.get (C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\node_modules\src\container.class.ts:61:32)
+    at new UserController (C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\src\controllers\users.controller.ts:7:27)
+    at new UserRoute (C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\src\routes\users.route.ts:10:17)
+    at Object.<anonymous> (C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\src\server.ts:10:3)
+    at Module._compile (node:internal/modules/cjs/loader:1455:14)
+    at Module.m._compile (C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\node_modules\ts-node\src\index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1534:10)
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\node_modules\ts-node\src\index.ts:1621:12)
+2024-08-27 21:27:09 error: uncaughtException: _a.getMetadata is not a function
+TypeError: _a.getMetadata is not a function
+    at ContainerInstance.getServiceValue (C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\node_modules\src\container-instance.class.ts:276:44)
+    at ContainerInstance.get (C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\node_modules\src\container-instance.class.ts:54:36)
+    at Function.get (C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\node_modules\src\container.class.ts:61:32)
+    at new UserController (C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\src\controllers\users.controller.ts:7:27)
+    at new UserRoute (C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\src\routes\users.route.ts:10:17)
+    at Object.<anonymous> (C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\src\server.ts:10:3)
+    at Module._compile (node:internal/modules/cjs/loader:1455:14)
+    at Module.m._compile (C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\node_modules\ts-node\src\index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1534:10)
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\node_modules\ts-node\src\index.ts:1621:12)
+2024-08-27 21:27:39 error: uncaughtException: _a.getMetadata is not a function
+TypeError: _a.getMetadata is not a function
+    at ContainerInstance.getServiceValue (C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\node_modules\src\container-instance.class.ts:276:44)
+    at ContainerInstance.get (C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\node_modules\src\container-instance.class.ts:54:36)
+    at Function.get (C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\node_modules\src\container.class.ts:61:32)
+    at new UserController (C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\src\controllers\users.controller.ts:7:27)
+    at new UserRoute (C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\src\routes\users.route.ts:10:17)
+    at Object.<anonymous> (C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\src\server.ts:10:3)
+    at Module._compile (node:internal/modules/cjs/loader:1455:14)
+    at Module.m._compile (C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\node_modules\ts-node\src\index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1534:10)
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\node_modules\ts-node\src\index.ts:1621:12)
+2024-08-27 21:33:48 error: uncaughtException: _a.getMetadata is not a function
+TypeError: _a.getMetadata is not a function
+    at ContainerInstance.getServiceValue (C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\node_modules\src\container-instance.class.ts:276:44)
+    at ContainerInstance.get (C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\node_modules\src\container-instance.class.ts:54:36)
+    at Function.get (C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\node_modules\src\container.class.ts:61:32)
+    at new UserController (C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\src\controllers\users.controller.ts:7:27)
+    at new UserRoute (C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\src\routes\users.route.ts:10:17)
+    at Object.<anonymous> (C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\src\server.ts:10:3)
+    at Module._compile (node:internal/modules/cjs/loader:1455:14)
+    at Module.m._compile (C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\node_modules\ts-node\src\index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1534:10)
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\faith\Downloads\complete-node-backend-master\complete-node-backend-master\node_modules\ts-node\src\index.ts:1621:12)
+2024-08-27 22:07:14 error: [POST] /reservations >> StatusCode:: 400, Message:: userId should not be empty,userId must be a string, propertyId should not be empty,propertyId must be a string, checkInDate should not be empty,checkInDate must be a valid ISO 8601 date string, checkOutDate should not be empty,checkOutDate must be a valid ISO 8601 date string
+2024-08-27 22:11:11 error: [POST] /reservations >> StatusCode:: 400, Message:: propertyId should not be empty,propertyId must be a string, checkInDate should not be empty,checkInDate must be a valid ISO 8601 date string, checkOutDate should not be empty,checkOutDate must be a valid ISO 8601 date string

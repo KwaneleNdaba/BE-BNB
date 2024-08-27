@@ -8,3 +8,70 @@
 2024-08-25 17:25:48 info: ======= ENV: development =======
 2024-08-25 17:25:48 info: 🚀 App listening on the port 5000
 2024-08-25 17:25:48 info: =================================
+2024-08-25 18:18:29 info: Swagger initialized successfully
+2024-08-25 18:18:29 info: =================================
+2024-08-25 18:18:29 info: ======= ENV: development =======
+2024-08-25 18:18:29 info: 🚀 App listening on the port 5000
+2024-08-25 18:18:29 info: =================================
+2024-08-25 18:18:59 info: Swagger initialized successfully
+2024-08-25 18:18:59 info: =================================
+2024-08-25 18:18:59 info: ======= ENV: development =======
+2024-08-25 18:18:59 info: 🚀 App listening on the port 5000
+2024-08-25 18:18:59 info: =================================
+2024-08-25 18:30:47 info: Swagger initialized successfully
+2024-08-25 18:30:47 info: =================================
+2024-08-25 18:30:47 info: ======= ENV: development =======
+2024-08-25 18:30:47 info: 🚀 App listening on the port 5000
+2024-08-25 18:30:47 info: =================================
+2024-08-25 18:30:57 info: Swagger initialized successfully
+2024-08-25 18:30:57 info: =================================
+2024-08-25 18:30:57 info: ======= ENV: development =======
+2024-08-25 18:30:57 info: 🚀 App listening on the port 5000
+2024-08-25 18:30:57 info: =================================
+2024-08-25 18:31:03 info: Swagger initialized successfully
+2024-08-25 18:31:03 info: =================================
+2024-08-25 18:31:03 info: ======= ENV: development =======
+2024-08-25 18:31:03 info: 🚀 App listening on the port 5000
+2024-08-25 18:31:03 info: =================================
+2024-08-25 18:31:19 info: Swagger initialized successfully
+2024-08-25 18:31:19 info: =================================
+2024-08-25 18:31:19 info: ======= ENV: development =======
+2024-08-25 18:31:19 info: 🚀 App listening on the port 5000
+2024-08-25 18:31:19 info: =================================
+2024-08-25 18:31:27 info: [0mGET /api-docs [36m301[0m 13.031 ms - 183[0m
+2024-08-25 18:31:27 info: [0mGET /api-docs/ [32m200[0m 6.653 ms - -[0m
+2024-08-25 18:31:28 info: [0mGET /api-docs/swagger-ui-init.js [32m200[0m 1.518 ms - -[0m
+2024-08-25 18:31:28 info: [0mGET /api-docs/swagger-ui.css [32m200[0m 12.255 ms - -[0m
+2024-08-25 18:31:28 info: [0mGET /api-docs/swagger-ui-standalone-preset.js [32m200[0m 11.218 ms - -[0m
+2024-08-25 18:31:28 info: [0mGET /api-docs/swagger-ui-bundle.js [32m200[0m 12.249 ms - -[0m
+2024-08-25 18:31:31 info: [0mGET /api-docs/favicon-32x32.png [32m200[0m 2.890 ms - 628[0m
+2024-08-25 18:33:00 info: Swagger initialized successfully
+2024-08-25 18:33:00 info: =================================
+2024-08-25 18:33:00 info: ======= ENV: development =======
+2024-08-25 18:33:00 info: 🚀 App listening on the port 5000
+2024-08-25 18:33:00 info: =================================
+2024-08-25 18:34:22 info: [0mGET /api-docs/ [36m304[0m 17.071 ms - -[0m
+2024-08-25 18:34:22 info: [0mGET /api-docs/swagger-ui.css [36m304[0m 3.094 ms - -[0m
+2024-08-25 18:34:22 info: [0mGET /api-docs/swagger-ui-init.js [36m304[0m 1.008 ms - -[0m
+2024-08-25 18:34:22 info: [0mGET /api-docs/swagger-ui-bundle.js [36m304[0m 6.276 ms - -[0m
+2024-08-25 18:34:22 info: [0mGET /api-docs/swagger-ui-standalone-preset.js [36m304[0m 7.198 ms - -[0m
+2024-08-25 18:34:23 info: [0mGET /api-docs/favicon-32x32.png [36m304[0m 6.352 ms - -[0m
+2024-08-25 18:34:26 info: [0mGET /api-docs/ [36m304[0m 1.843 ms - -[0m
+2024-08-25 18:34:26 info: [0mGET /api-docs/swagger-ui.css [36m304[0m 1.114 ms - -[0m
+2024-08-25 18:34:26 info: [0mGET /api-docs/swagger-ui-bundle.js [36m304[0m 2.430 ms - -[0m
+2024-08-25 18:34:27 info: [0mGET /api-docs/swagger-ui-init.js [36m304[0m 0.896 ms - -[0m
+2024-08-25 18:34:27 info: [0mGET /api-docs/swagger-ui-standalone-preset.js [36m304[0m 4.399 ms - -[0m
+2024-08-25 18:34:28 info: [0mGET /api-docs/favicon-32x32.png [36m304[0m 1.376 ms - -[0m
+2024-08-25 18:37:47 info: Swagger initialized successfully
+2024-08-25 18:37:47 info: =================================
+2024-08-25 18:37:47 info: ======= ENV: development =======
+2024-08-25 18:37:47 info: 🚀 App listening on the port 5000
+2024-08-25 18:37:47 info: =================================
+2024-08-25 18:39:11 info: [0mGET /api-docs/ [36m304[0m 12.701 ms - -[0m
+2024-08-25 18:39:11 info: [0mGET /api-docs/swagger-ui.css [36m304[0m 13.350 ms - -[0m
+2024-08-25 18:39:11 info: [0mGET /api-docs/swagger-ui-bundle.js [36m304[0m 14.440 ms - -[0m
+2024-08-25 18:39:11 info: [0mGET /api-docs/swagger-ui-standalone-preset.js [36m304[0m 13.637 ms - -[0m
+2024-08-25 18:39:11 info: [0mGET /api-docs/swagger-ui-init.js [32m200[0m 3.019 ms - -[0m
+2024-08-25 18:39:11 info: [0mGET /api-docs/favicon-32x32.png [36m304[0m 2.250 ms - -[0m
+2024-08-25 18:39:58 error: [POST] /reservations >> StatusCode:: 400, Message:: userId should not be empty,userId must be a string, propertyId should not be empty,propertyId must be a string, checkInDate should not be empty,checkInDate must be a valid ISO 8601 date string, checkOutDate should not be empty,checkOutDate must be a valid ISO 8601 date string, guests must not be less than 1,guests must be a number conforming to the specified constraints
+2024-08-25 18:39:58 info: [0mPOST /reservations [33m400[0m 55.678 ms - 386[0m
